@@ -31,11 +31,8 @@ provisioner:
       callbacks_enabled: ansible.posix.profile_tasks
   connection_options:
     ansible_user: centos
-    redmine_archived_media_file: 'files.tar.gz'
-    redmine_backup_data_dir: '/tmp/redmine-backup'
-    redmine_dir: '/var/lib/redmine'
     redmine_file_dir: '/var/lib/redmine/files'
-    remote_directory: '{{ redmine_backup_data_dir }}'
+    remote_directory: '/tmp/redmine-backup'
     remote_file_name: 'files.tar.gz'
     s3_bucket: 'mamono210'
     s3_object_name: 'circleci-gce/redmine/stop/files.tar.gz'
