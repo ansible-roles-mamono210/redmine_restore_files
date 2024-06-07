@@ -6,9 +6,9 @@ galaxy_info:
   description: Restore Redmine media files
   galaxy_tags: []
   license: "license (BSD, MIT)"
-  min_ansible_version: 8.1.0
+  min_ansible_version: 10.0.1
   role_name: redmine_restore_files
   platforms:
     - name: EL
       release:
-        - 8
+        - 9
